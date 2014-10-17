@@ -21,6 +21,8 @@ Add your AWS Key and secret to `./config/aws.config.json`
     $ sudo apt-get install git npm
     $ git clone https://github.com/samkeen/s3-proxy-auth.git && cd s3-proxy-auth
     $ npm install
+    # alias nodejs to node
+    $ sudo ln -s /usr/bin/nodejs /usr/bin/node
     $ cp ./config/aws.config.dist.json ./config/aws.config.json
     $ vi config/aws.config.json
     
