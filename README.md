@@ -3,8 +3,7 @@
 Amazon offers a very easy to implement [static website hosting option](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 for S3 buckets. Since it is a completely static option though, all files are exposed to the public Internet (no authentication option)
 
-This is a node server that simple proxies requests it to make authenticated API requests to the S3 bucket and serves back the contents
-of the static file requested.
+This is a node server that simple proxies requests made to it.  It make a matching authenticated API requests to the S3 bucket and serves back the contents of the static file requested.
 
 ## Install
 
