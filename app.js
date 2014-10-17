@@ -2,6 +2,7 @@ var express = require('express');
 var logger = require('morgan');
 var path = require('path');
 var routes = require('./routes/index');
+var favicon = require('serve-favicon');
 
 var app = express();
 
@@ -11,6 +12,7 @@ app.set('view engine', 'hjs');
 
 app.use(logger('dev'));
 
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 app.use('/', routes);
 
