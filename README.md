@@ -7,11 +7,23 @@ This is a node server that simple proxies requests made to it.  It make a matchi
 
 ## Install
 
-     cp ./config/aws.config.dist.json ./config/aws.config.json
+### Quick install (if you already have npm and such)
+
+     $ git clone https://github.com/samkeen/s3-proxy-auth.git && cd s3-proxy-auth
+     $ npm install
+     $ cp ./config/aws.config.dist.json ./config/aws.config.json
 
 Add your AWS Key and secret to `./config/aws.config.json`
 
-     npm install
+### Install from scratch (Ubuntu)
+
+    $ sudo apt-get update
+    $ sudo apt-get install git npm
+    $ git clone https://github.com/samkeen/s3-proxy-auth.git && cd s3-proxy-auth
+    $ npm install
+    $ cp ./config/aws.config.dist.json ./config/aws.config.json
+    $ vi config/aws.config.json
+    
 
 ## Run
 
