@@ -15,7 +15,7 @@ router.get(/^\/([^\/]*)\/(.+)/, function (req, res) {
 
   request.createReadStream()
   /**
-   * this can fire more than once but we only want to pipe the
+   * 'readable' can fire more than once but we only want to pipe the
    * response once so use a simple semaphore
    */
     .on('readable', function () {
